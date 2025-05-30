@@ -4,3 +4,29 @@ const card = document.querySelector(".card");
 
 const apiKey = "904e30c385e3bd964b8b0072df049344";
 
+weatherForm.addEventListener("submit" , event => {
+
+    
+
+});
+
+async function getWeatherData(city) {
+    
+};
+
+function displayInfo(data) {
+
+
+};
+
+function getWeatherEmoji(weatherId) {
+
+
+
+};
+
+function displayError(message) {
+
+
+
+}

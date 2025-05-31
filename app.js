@@ -28,23 +28,36 @@ async function getWeatherData(city) {
 
         if (!response.ok) {
 
-            throw new Error("City not found");
+            throw new Error("City not found"); // the city is not a city inter this
 
         }
 
-        const data = await response.json();
+        const data = await response.json(); // the data weat the jeson
 
         displayInfo(data);
 
 
     } catch (error) {
         
-        displayError(error.message);
+        displayError(error.message);  // catch or add displayErrors
     }
 
 };
 
 function displayInfo(data) {
+
+    const temp = data.main.temp;
+    const cityName = data.name;
+    const description = data.weather[0].description;
+    const emoji = getWeatherEmoji(data.weather[0].id);
+
+    card.innerHTML = `
+        <h2>${cityName}</h2>
+        <p>${emoji} ${description}</p>
+        <p>🌡️ Temperature: ${temp}°C</p>
+    `;
+
+    card.style.display = "flex";
 
 };
 

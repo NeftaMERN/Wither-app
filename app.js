@@ -37,9 +37,9 @@ function displayInfo(data) {
     } catch (error) {
         displayError(error.message);
     }
-}
-
 };
+
+
 
 function getWeatherEmoji(weatherId) {
 

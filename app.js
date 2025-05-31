@@ -42,7 +42,11 @@ function displayError(message) {
 
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
+
+    city.displayError.Value
     
+    card.textContent = "";
+    card.style.display = "flex"
 
 
 }

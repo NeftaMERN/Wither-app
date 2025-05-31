@@ -19,10 +19,6 @@ weatherForm.addEventListener("submit", event => {
 
 async function getWeatherData(city) {
     
-};
-
-function displayInfo(data) {
-
         try {
 
         const response = await fetch(
@@ -42,10 +38,14 @@ function displayInfo(data) {
 
 
     } catch (error) {
-
-        displayError(error.message);
         
+        displayError(error.message);
     }
+
+};
+
+function displayInfo(data) {
+
 };
 
 

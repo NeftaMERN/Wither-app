@@ -8,14 +8,9 @@ weatherForm.addEventListener("submit" , event => {
 
     event.preventDefault();
 
-    const city = cityInput.Value;
+    const city = cityInput.Value.trim();
 
-    if(city) {
-
-        displayError = "pleass enter the city";
-
-    }
-    else{
+    if(!city) {
 
         displayError = "pleass enter the city";
 

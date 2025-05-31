@@ -65,7 +65,7 @@ function displayInfo(data) {
 
 function getWeatherEmoji(weatherId) {
 
-       if (weatherId >= 200 && weatherId < 300) {
+    if (weatherId >= 200 && weatherId < 300) {
         return "⛈️";
     } else if (weatherId >= 300 && weatherId < 500) {
         return "🌦️";

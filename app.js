@@ -13,8 +13,11 @@ weatherForm.addEventListener("submit" , event => {
     if(!city) {
 
         displayError = "pleass enter the city";
+        return;
 
     }
+
+    getWeatherData(city);
 
 });
 
@@ -37,11 +40,11 @@ function displayError(message) {
 
     const errorDisplay = document.createElement("p");
     errorDisplay.textContent = message;
+    errorDisplay.style.color = "red";
 
-    city.displayError.Value
-    
+    card.appendChild(errorDisplay);
     card.textContent = "";
-    card.style.display = "flex"
+    card.style.display = "flex";
 
 
 }

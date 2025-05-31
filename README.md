@@ -1,3 +1,3 @@
-Simple Wither-app java script project
+# Semple Wither-app java script project
 
 ---------------------------------------------------------------------------------

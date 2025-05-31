@@ -24,18 +24,27 @@ async function getWeatherData(city) {
 function displayInfo(data) {
 
         try {
+
         const response = await fetch(
             `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`
         );
 
+
         if (!response.ok) {
+
             throw new Error("City not found");
+
         }
 
         const data = await response.json();
+
         displayInfo(data);
+
+
     } catch (error) {
+
         displayError(error.message);
+        
     }
 };
 
